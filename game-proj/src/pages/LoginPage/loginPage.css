@@ -1,0 +1,41 @@
+.loginForm{
+    width: 400px;
+    height: 400px;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formContent{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(179, 173, 173);
+    background-color: white;
+    border-radius: 10%;
+    margin: 3px auto;
+    text-align: center;
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    box-shadow: 3px 10px 0px 0px rgba(0, 0, 0, 0.795);
+}
+/* .connectByEmailBtn{
+
+} */
+
+
+/* .backgroundImg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+    background-image: url('../../assets/Images/backgroundO4Signup.png');
+    background-size: cover;
+    background-position: center;
+} */

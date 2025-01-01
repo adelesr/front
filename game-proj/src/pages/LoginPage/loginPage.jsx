@@ -32,7 +32,7 @@ const LoginPage = () => {
                 <input type="text" placeholder="Username" value={user.userName} onChange={(e)=>setUser({...user, userName: e.target.value})} />
                 <br/>
                 <br/>
-                <input type="password"  placeholder="Password" value={user.password} onChange={(e)=>setUser({...user, password:e.target.value})}/>
+                <input type="password" placeholder="Password" value={user.password} onChange={(e)=>setUser({...user, password:e.target.value})}/>
                 <br />
                 <button>Login</button>
                 {errMsg? <p style={{color:'red'}}>{errMsg}</p>:''}
@@ -42,9 +42,9 @@ const LoginPage = () => {
         <div>
              <button className='connectByEmailBtn' onClick={connectByEmailHandler} >Want to connect with Email?</button> 
                 {connectByEmail? (
-                    <connectByEmail/>
-                ): null  }
-            </div>
+                    <ConnectByEmail/>
+                ): null }
+        </div>
     </div>
   )
 }

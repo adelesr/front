@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import {Link, useNavigate} from 'react-router'
-import ConnectByEmail from '../../components/ConnectByEmail.jsx';
+import ConnectByEmail from '../../components/ConnectByEmail/ConnectByEmail.jsx';
 import axios from 'axios';
 import './LoginPage.css';
 const LoginPage = () => {
@@ -25,7 +25,7 @@ const LoginPage = () => {
 
     }
   return (
-    <div >
+    <div className='mainScreen'>
         <div  className='formContent'>
             <form onSubmit={login}>
                 <h2 >Login</h2>
@@ -34,12 +34,13 @@ const LoginPage = () => {
                 <br/>
                 <input type="password" placeholder="Password" value={user.password} onChange={(e)=>setUser({...user, password:e.target.value})}/>
                 <br />
-                <button>Login</button>
+                <br />
+                <button className='btnLogin'>Login</button>
                 {errMsg? <p style={{color:'red'}}>{errMsg}</p>:''}
             </form>
             <p>Don't have an account? <Link to="/signUp">Sign up here</Link></p>
         </div>
-        <div>
+        <div className='margineCenter'>
              <button className='connectByEmailBtn' onClick={connectByEmailHandler} >Want to connect with Email?</button> 
                 {connectByEmail? (
                     <ConnectByEmail/>

@@ -6,6 +6,8 @@ import LoginPage from './pages/LoginPage/loginPage.jsx';
 import ChatPage from './pages/chatPage.jsx';
 import SignUpPage from './pages/SignUpPage/signUpPage.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 axios.defaults.baseURL = "http://localhost:8080";
 createRoot(document.getElementById('root')).render(

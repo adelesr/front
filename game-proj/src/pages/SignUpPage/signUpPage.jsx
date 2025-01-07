@@ -30,7 +30,9 @@ const SignUpPage = () => {
     }, [signedUpSucssesfully])
     
   return (
-    <div className='mainScreen'>
+    <div className='backgroundImgSignUp'>
+    <div className='mainScreenSignUp'>
+       <div className='signUpPlaceHolder'></div>
       <div className='signUp'>
         <img src={signupIcon} alt="" className='signupIcon'/>
         {/* להמשיך.. */}
@@ -67,6 +69,7 @@ const SignUpPage = () => {
         <p>Already have an account? <Link to="/">Login here</Link></p>
       </div>
 
+    </div>
     </div>
   )
 }

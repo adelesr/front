@@ -9,7 +9,7 @@
     margin: 2px;
 }
 .sendEmailBtn{
-    /* background-color: rgb(241, 211, 144); */
+    background-color: rgb(241, 211, 144);
     /* border-radius: 10px; */
     width: 100px;
     height: 30px;
@@ -24,5 +24,8 @@
     margin: 10px auto;
     /* padding: 10px; */
     border-radius: 10px;
-    border: 1px solid lightgray;
+    color: white;
+    /* border: 1px solid ; */
+    background-color: rgba(59, 59, 56, 0.836);
+    opacity: 1;
 }

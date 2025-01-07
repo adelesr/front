@@ -68,17 +68,18 @@ const ConnectByEmail = () => {
             </form>
             {isVerifySent ? (
             <div>
-                 <div>
-                   <form onSubmit={verifyCode} className='emailForm'>
+                 <div className='emailForm'>
+                   <form onSubmit={verifyCode} >
                         <label htmlFor="">Enter the verify code: </label>
                         <input type="text" value={code} onChange={(e)=>setCode(e.target.value)}/>
                         <button className='sendEmailBtn'>Submit</button>
                     </form>
+                    <div>
+                        <CorrectProcess param={messageVerifyCode} equalTo={"Verification code is correct"} 
+                            succsesMsg={ "passing to chat room..."} errMsg={messageVerifyCode}/>
+                    </div>
                 </div>
-                <div>
-                    <CorrectProcess param={messageVerifyCode} equalTo={"Verification code is correct"} 
-                    succsesMsg={ "passing to chat room..."} errMsg={messageVerifyCode}/>
-                </div>
+                
                 
                 {/* {messageVerifyCode==="Verification code has expired, please try again"? (
                     <>

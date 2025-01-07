@@ -25,28 +25,33 @@ const LoginPage = () => {
 
     }
   return (
-    <div className='mainScreen'>
+    <div className=' backgroundImg'>
+    <div className='loginPlaceHolder'></div>
+    <div className="mainScreen">
         <div  className='formContent'>
             <form onSubmit={login}>
-                <h2 >Login</h2>
-                <input type="text" placeholder="Username" value={user.userName} onChange={(e)=>setUser({...user, userName: e.target.value})} />
+                {/* <h2 >Login</h2> */}
+                <input type="text" placeholder="Username" className="inputText" value={user.userName} onChange={(e)=>setUser({...user, userName: e.target.value})} />
                 <br/>
                 <br/>
-                <input type="password" placeholder="Password" value={user.password} onChange={(e)=>setUser({...user, password:e.target.value})}/>
+                <input type="password" placeholder="Password" className="inputText" value={user.password} onChange={(e)=>setUser({...user, password:e.target.value})}/>
                 <br />
                 <br />
                 <button className='btnLogin'>Login</button>
                 {errMsg? <p style={{color:'red'}}>{errMsg}</p>:''}
             </form>
             <p>Don't have an account? <Link to="/signUp">Sign up here</Link></p>
+            <button className='connectByEmailBtn' onClick={connectByEmailHandler} >Want to connect with Email?</button> 
         </div>
         <div className='margineCenter'>
-             <button className='connectByEmailBtn' onClick={connectByEmailHandler} >Want to connect with Email?</button> 
+             
                 {connectByEmail? (
                     <ConnectByEmail/>
                 ): null }
         </div>
     </div>
+    </div>
+   
   )
 }
 

@@ -9,6 +9,7 @@ import './chat components/chatStyle.css'
 
 
 const HomePage = () => {
+  
   const [userMsg, setUserMsg] = useState('');
   const [currentChat, setCurrentChat] = useState();
   const [chatList, setChatList] = useState(chatDB)

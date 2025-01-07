@@ -8,7 +8,7 @@ const EmptyChatBox = () => {
         </header>
         <section>
             <main>
-                <div className=''>
+                <div>
                     <img className='emptyChatImage' src='../src/assets/Images/chat_Images/empty chat.png'></img>
                     <h2>No chat has been selected</h2>
                     <div>choose a chat for start talking</div>

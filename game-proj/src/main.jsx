@@ -13,7 +13,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 axios.defaults.baseURL = "http://localhost:8080";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <BrowserRouter>
+    <ChatHomePage></ChatHomePage>
+   {/* <BrowserRouter>
     <Routes>
       <Route path='/' element={<LoginPage/>}/>
       <Route path='/chat' element={<ChatHomePage/>}/>
